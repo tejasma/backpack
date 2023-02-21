@@ -1,3 +1,5 @@
+require("./wdyr");
+
 import React, { lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { openPopupWindow } from "@coral-xyz/common/dist/esm/browser";

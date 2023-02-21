@@ -20,10 +20,10 @@ import { ErrorBoundary } from "./ErrorBoundary";
 
 const Router = lazy(() => import("./Router"));
 
-import "./App.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import "react-toastify/dist/ReactToastify.css";
+import "./App.css";
 
 const BACKDROP_STYLE = {
   height: "100vh",
@@ -59,6 +59,8 @@ export default function App() {
     </div>
   );
 }
+
+App.whyDidYouRender = true;
 
 function _App() {
   useBackgroundKeepAlive();
